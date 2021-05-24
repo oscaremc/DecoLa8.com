@@ -29,10 +29,11 @@ nav {
 .ws-header {
     display: none;
 }
-.container-producto img {
-    max-width: 420px;
+main .container-producto img {
+    max-width: 400px;
     width: 100%;
-    box-shadow: 1px 1px 2px;
+    height: 100%;
+    box-shadow: 1px 1px 2px gray;
     border-radius: 10px;
 }
 .container-footer {
