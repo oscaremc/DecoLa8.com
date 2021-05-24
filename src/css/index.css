@@ -1,0 +1,141 @@
+:root {
+    --azul: #A4EBF3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul);
+    padding: 5px 0;
+}
+.nav-menu {
+    margin: 0 50px;
+}
+.nav-menu img, .footer-Instagram-numero img {
+    width: 30px;
+}
+.footer-facebook-numero img {
+    width: 35px;
+}
+.nav-logo img {
+    width: 170px;
+}
+.container-main {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-producto {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 9px;
+}
+.container-producto img:hover{
+    box-shadow: 4px 4px 7px;
+    
+}
+.container-producto img {
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 1px 1px 2px;
+    border-radius: 10px;
+}
+.container-footer {
+    background: var(--azul);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fff, var(--azul));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fff, var(--azul)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-footer{
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ws-tel-numero a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    border: 1px solid;
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+}
+.ws-tel-numero p {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.ws-tel-numero img {
+    width: 40px;
+}
+.footer-tel-numero  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    border: 1px solid;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+.hoarios-numero-ls {
+    border-right: 1px solid;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+.footer-tel-numero p, .footer-dir-numero p, .hoarios-numero-ls p, .hoarios-numero-d p{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.footer-tel, .footer-dir, .footer-Horarios, .footer-RedesS {
+    padding-top: 20px;
+    margin: 0 20px;
+}
+.footer-tel h3, .footer-dir h3, .footer-Horarios h3, .footer-RedesS h3{
+    padding: 10px 0;
+}
+.footer-Instagram-numero a, .footer-facebook-numero a{
+    align-items: center;
+}
+.footer-Instagram-numero img, .footer-facebook-numero img {
+    margin-right: 5px;
+}
+.footer-tel-numero img {
+    width: 40px;
+}
+.footer-Horarios-numero {
+    display: flex;
+    justify-content: center;
+}
+.footer-facebook-numero a, .footer-Instagram-numero a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 8px 0;
+}
+.foote-logo  img{
+    width: 200px;
+    margin: 15px 0;
+}
+.foote-logo {
+    margin: 0 20px;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "decoraciones_la_8",
+  "version": "1.0.0",
+  "description": "Maquetacion de la tienda Decoraciones la octava, Buga. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oscaremc",
+  "license": "ISC"
+}

@@ -1,0 +1,164 @@
+:root {
+    --azul: #A4EBF3;
+    --rosado: #fdbaf8;
+    --rosadoT: rgb(253, 186, 248, 0.8);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-Instagram-numero img {
+    width: 30px;
+}
+.footer-facebook-numero img {
+    width: 35px;
+}
+.nav-logo img {
+    width: 170px;
+}
+main .container-producto img {
+    max-width: 420px;
+    width: 100%;
+}
+.container-footer {
+    background: var(--azul);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fff, var(--azul));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fff, var(--azul)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+.container-footer{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.footer-tel-numero  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    border: 1px solid;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+.footer-tel-numero p, .footer-dir-numero p, .hoarios-numero-ls p, .hoarios-numero-d p{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.footer-tel, .footer-dir, .footer-Horarios, .footer-RedesS {
+    padding-top: 20px;
+}
+.footer-tel a:hover {
+    background-color: green;
+    border: none;
+    color: white;
+}
+.footer-tel h3, .footer-dir h3, .footer-Horarios h3, .footer-RedesS h3{
+    padding: 10px 0;
+}
+.footer-Instagram-numero a, .footer-facebook-numero a{
+    align-items: center;
+}
+.footer-Instagram-numero img, .footer-facebook-numero img {
+    margin-right: 5px;
+}
+.footer-tel-numero img {
+    width: 40px;
+}
+.footer-Horarios-numero {
+    display: flex;
+    justify-content: center;
+}
+.footer-facebook-numero a, .footer-Instagram-numero a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 8px 0;
+}
+.foote-logo  img{
+    width: 200px;
+    margin: 15px 0;
+}
+.container-items {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.producto-img img {
+    max-width: 425px;
+    width: 100%;
+}
+main .container-producto {
+    background-color: var(--azul);
+    display: block;
+}
+main .container-producto-detalle {
+    width: 100%;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--azul);
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: 1px solid;
+    box-shadow: none;
+    margin: 0;
+}
+.hoarios-numero-ls {
+    border-right: 1px solid;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+.producto-detalle-titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.producto-detalle-descripcion {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    margin: 0 10px;
+}
+.producto-detalle-btn {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rosado);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px;
+    margin-bottom: 30px;
+}
+.prducto-detalle-boton {
+    margin: 10px 0;
+}
+.prducto-detalle-boton a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.producto-detalle-precio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.detalle-precio-valor {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.container-producto-impt {
+    display: none;
+}
+.ws-header {
+    display: none;
+}
