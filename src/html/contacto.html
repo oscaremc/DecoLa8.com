@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Decoraciones La 8</title>
-    <link rel="stylesheet" href="/src/css/contactoMovil.css"  media="(max-width: 426px)">
-    <link rel="stylesheet" href="/src/css/contactoTablet.css"  media="(max-width: 780px)">
+    <link rel="stylesheet" href="../css/contactoMovil.css"  media="(max-width: 426px)">
+    <link rel="stylesheet" href="../css/contactoTablet.css"  media="(max-width: 780px)">
+    <link rel="stylesheet" href="../css/contactoDesktop.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -14,18 +15,40 @@
     <header>
         <nav>
             <div class="nav-menu">
-                <a href="">
-                    <img src="/src/utils/logo/menu.png" alt="">
-                </a>
+                <button id="menuModal">
+                    <img src="../utils/logo/menu.png" alt="">
+                </button>
             </div>
             <div class="nav-logo">
                 <a href="/index.html">
-                    <img src="/src/utils/logo/logo-globoB-com-movil.png" alt="">
+                    <img src="../utils/logo/logo-globoB-com-movil.png" alt="">
                 </a>
             </div>
         </nav>
     </header>
     <main>
+        <section class="container-menu" id="abrirModal">
+            <span class="close">&times;</span>
+            <div class="container-menuLink">
+                <h1>MENU</h1>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="">Categoria</a></p>
+                <p><a href="../html/contacto.html">Contacto</a></p>
+                <p><a href="../html/contacto.html">¿ Como llegar ?</a></p>
+                <h3>Redes Sociales</h3>
+                <div class="menuLink-redes">
+                    <p>
+                        <img src="../utils/logo/333.png" alt="">
+                        <a href="https://www.instagram.com/decoracioneslaoctava/">Facebook</a>
+                    </p>
+                    <p>
+                        <img src="../utils/logo/logo-facebook-512.png" alt="">
+                        <a href="https://www.instagram.com/decoracioneslaoctava/">Instagram</a>
+                    </p>
+                </div>
+                <div class=""></div>
+            </div>
+        </section>
         <section class="container-form">
             <form action="">
                 <h2>CONTACTO</h2>
@@ -36,31 +59,33 @@
             </form>
         </section>
         <section class="container-main">
-            <div class="main-tel">
-                <h3>Telefono:</h3>
-                <div class="main-tel-numero">
-                    <a href="https://api.whatsapp.com/message/7BRHUMA2LCYDA1">
-                        <img src="/src/utils/logo/WhatsApp.png" alt="">
-                        <p>+57 311 3878439</p>
-                    </a>
-                </div>
-            </div>
-            <div class="main-Horarios">
-                <h3>Horarios:</h3>
-                <div class="main-Horarios-numero">
-                    <div class="hoarios-numero-ls">
-                        <p>Lunes a Sabado: </p>
-                        <p>8 am - 8 pm</p>
+            <div class="main-tel-container">
+                <div class="main-tel">
+                    <h3>Telefono:</h3>
+                    <div class="main-tel-numero">
+                        <a href="https://api.whatsapp.com/message/7BRHUMA2LCYDA1">
+                            <img src="../utils/logo/WhatsApp.png" alt="">
+                            <p>+57 311 3878439</p>
+                        </a>
                     </div>
-                    <div class="hoarios-numero-d">
-                        <p>Domigo:</p>
-                        <p>8 am - 2 pm</p>
+                </div>
+                <div class="main-Horarios">
+                    <h3>Horarios:</h3>
+                    <div class="main-Horarios-numero">
+                        <div class="hoarios-numero-ls">
+                            <p>Lunes a Sabado: </p>
+                            <p>8 am - 8 pm</p>
+                        </div>
+                        <div class="hoarios-numero-d">
+                            <p>Domigo:</p>
+                            <p>8 am - 2 pm</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="main-dir">
-                <h3>Direccion:</h3>
                 <div class="main-dir-numero">
+                    <h3>Direccion:</h3>
                     <p>Calle 8 # 12 - 18</p>
                     <p>Guadalajara de buga</p>
                 </div>
@@ -73,19 +98,19 @@
     <footer>
         <section class="container-footer">
             <div class="foote-logo">
-                <img src="/src/utils/logo/logo-globoN-com-movil.png" alt="">
+                <img src="../utils/logo/logo-globoN-com-movil.png" alt="">
             </div>
             <div class="main-RedesS">
                 <h3>Redes Sociales</h3>
                 <div class="main-Instagram-numero">
                     <a href="https://www.instagram.com/decoracioneslaoctava/">
-                        <img src="/src/utils/logo/333.png" alt="">
+                        <img src="../utils/logo/333.png" alt="">
                         <p>instagram</p>
                     </a>
                 </div>
                 <div class="main-facebook-numero">
                     <a href="https://www.instagram.com/decoracioneslaoctava/">
-                        <img src="/src/utils/logo/logo-facebook-512.png" alt="">
+                        <img src="../utils/logo/logo-facebook-512.png" alt="">
                         <p>Facebook</p>
                     </a>
                 </div>
@@ -93,4 +118,5 @@
         </section>
     </footer>
 </body>
+<script src="../js/index.js"></script>
 </html>

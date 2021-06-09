@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Decoraciones La 8</title>
+    <!-- <link rel="stylesheet" href="src/css/indexMovil.css"> -->
+    <link rel="stylesheet" href="/src/css/indexMovil.css" media="(max-width: 550px)">
+    <link rel="stylesheet" href="/src/css/indexTablet.css" media="(max-width: 780px)">
+    <link rel="stylesheet" href="/src/css/index_dbProductos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-menu">
+                <button id="menuModal">
+                    <img src="../utils/logo/menu.png" alt="">
+                </button>
+            </div>
+            <div class="nav-logo">
+                <a href="">
+                    <img src="../utils/logo/logo-globoB-com-movil.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-cardForm">
+            <div>
+
+                <h1>Base de datos de productos</h1>
+                
+                <form id="task-form">
+                  <div class="form-group">
+                    <input type="text" id="task-title" class="form-control" class="Task Title" placeholder="Titulo de producto"
+                      autofocus required>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" id="task-valor" class="form-control" class="Task Valor" placeholder="Valor del producto" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea id="task-description" rows="3" class="form-control" placeholder="Description" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input id="task-imagen" class="form-control" placeholder="Agregar Url Imagen" required></input>
+                  </div>
+    
+                  <button id="btn-task-form">
+                    Guardar
+                  </button>
+    
+                </form>
+              </div>
+        </section>
+        <section class="container-menu" id="abrirModal">
+            <span class="close">&times;</span>
+            <div class="container-menuLink">
+                <h1>MENU</h1>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="">Categoria</a></p>
+                <p><a href="/src/html/contacto.html">Contacto</a></p>
+                <p><a href="/src/html/contacto.html">¿ Como llegar ?</a></p>
+                <h3>Redes Sociales</h3>
+                <div class="menuLink-redes">
+                    <p>
+                        <img src="/src/utils/logo/333.png" alt="">
+                        <a href="https://www.instagram.com/decoracioneslaoctava/">Facebook</a>
+                    </p>
+                    <p>
+                        <img src="/src/utils/logo/logo-facebook-512.png" alt="">
+                        <a href="https://www.instagram.com/decoracioneslaoctava/">Instagram</a>
+                    </p>
+                </div>
+                <div class=""></div>
+            </div>
+        </section>
+        <section class="container-main" id="tasks-container">
+        </section>
+    </main>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSvedHJWiO6A1Er0aB4VQ5GGkdH--DigA",
+    authDomain: "decoracionesla8.firebaseapp.com",
+    projectId: "decoracionesla8",
+    storageBucket: "decoracionesla8.appspot.com",
+    messagingSenderId: "861019311151",
+    appId: "1:861019311151:web:a6638d7e6a8cfe693b4ada"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="../js/indexdb.js"></script>
+</html>

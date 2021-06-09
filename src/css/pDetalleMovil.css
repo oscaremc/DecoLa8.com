@@ -21,9 +21,8 @@ html {
 .nav-logo img {
     width: 170px;
 }
-main .container-producto img {
-    max-width: 420px;
-    width: 100%;
+.container-producto .producto-img img {
+    width: 100vw;
 }
 .container-footer {
     background: var(--azul);  /* fallback for old browsers */
@@ -34,55 +33,6 @@ main .container-producto img {
 .container-footer{
     font-size: 2rem;
     font-weight: 700;
-}
-.footer-tel-numero  a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
-    border: 1px solid;
-    width: 200px;
-    margin: auto;
-    border-radius: 10px;
-}
-.footer-tel-numero p, .footer-dir-numero p, .hoarios-numero-ls p, .hoarios-numero-d p{
-    font-size: 1.6rem;
-    font-weight: 900;
-}
-.footer-tel, .footer-dir, .footer-Horarios, .footer-RedesS {
-    padding-top: 20px;
-}
-.footer-tel a:hover {
-    background-color: green;
-    border: none;
-    color: white;
-}
-.footer-tel h3, .footer-dir h3, .footer-Horarios h3, .footer-RedesS h3{
-    padding: 10px 0;
-}
-.footer-Instagram-numero a, .footer-facebook-numero a{
-    align-items: center;
-}
-.footer-Instagram-numero img, .footer-facebook-numero img {
-    margin-right: 5px;
-}
-.footer-tel-numero img {
-    width: 40px;
-}
-.footer-Horarios-numero {
-    display: flex;
-    justify-content: center;
-}
-.footer-facebook-numero a, .footer-Instagram-numero a {
-    display: flex;
-    justify-content: center;
-    color: black;
-    padding: 8px 0;
-}
-.foote-logo  img{
-    width: 200px;
-    margin: 15px 0;
 }
 .container-items {
     justify-content: center;
@@ -125,8 +75,8 @@ main .container-producto-detalle {
     margin: 0 10px;
 }
 .producto-detalle-btn {
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -161,4 +111,107 @@ main .container-producto-detalle {
 }
 .ws-header {
     display: none;
+}
+.container-footer .footer-grid{
+    font-size: 1rem;
+    font-weight: 200;
+    padding-top: 20px;
+}
+.foote-logo  img{
+    width: 200px;
+    margin: 15px 0;
+}
+.cont-footer-grid .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.footer-tel-numero-grid img{
+    width: 30px;
+}
+.cont-footer-grid .footer-grid .footer-tel-grid{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    align-items: flex-start;
+}
+.cont-footer-grid .footer-grid .footer-tel-numero-grid a {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    color: black;
+}
+.footer-grid .footer-tel-numero-grid a:hover {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+.cont-footer-grid .footer-grid .footer-dir-grid{
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+    margin-left: 25px;
+}
+.cont-footer-grid .footer-grid .footer-Horarios-grid {
+    grid-column: 2 / 6;
+    grid-row: 3 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.footer-grid .footer-Horarios-numero-grid {
+    display: flex;
+    margin-top: 5px;
+}
+.hoarios-numero-ls-grid {
+    border-right:  1px solid #000;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+.cont-footer-grid .footer-grid .footer-RedesS-grid {
+    grid-column: 2 / 6;
+    grid-row: 6 / 8;
+    align-items: flex-start;
+    margin-top: 7px;
+    margin: auto;
+}
+.container-link-RedeS {
+    display: flex;
+}
+.container-link-RedeS div{
+    margin: 15px;
+}
+.footer-dir-grid{
+    margin-top: 5px;
+}
+.footer-dir-grid h3{
+    margin-bottom: 10px;
+}
+.footer-grid .footer-Instagram-numero-grid a, .footer-grid .footer-facebook-numero-grid a{
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-top: 5px;
+}
+.footer-Instagram-numero-grid img{
+    width: 20px;
+    margin-right: 10px;
+}
+.footer-facebook-numero-grid img {
+    width: 28px;
+    margin-right: 9px;
+}
+.cont-footer-grid .footer-grid .foote-logo-grid {
+    grid-column: 2 / 6;
+    grid-row: 8 / 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-footer-grid .footer-grid .foote-logo-grid img {
+    width: 200px;
+    margin-top: 20px;
 }

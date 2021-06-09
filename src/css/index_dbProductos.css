@@ -14,6 +14,8 @@ main {
     max-width: 1440px;
     width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 nav {
     display: flex;
@@ -34,19 +36,65 @@ nav {
 .nav-logo img {
     width: 170px;
 }
+
+
+/* card base de datos */
+.container-producto{
+    border: 1px solid;
+    margin: 10px 0;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.container-producto button{
+    margin: 0 5px;
+    padding: 7px 20px;
+}
+.producto-card{
+    margin: 10px;
+}
+.producto-card h1{
+    margin: 10px 0;
+}
+.producto-card h3{
+    width: 250px;
+}
+
+
+/* formulario de agregar y editar */
+.container-cardForm{
+    border: solid;
+    width: 320px;
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+}
+.container-cardForm button{
+    margin-top: 30px;
+    padding: 7px 20px;
+}
+.form-group{
+    margin: 20px 0;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+
+
 .container-main {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 90vh;
 }
 .container-producto {
     display: inline-flex;
     align-items: center;
     margin: 5px 9px;
-}
-.container-producto img:hover{
-    box-shadow: 4px 4px 4px #000;
 }
 .container-producto img {
     max-width: 300px;
@@ -91,91 +139,6 @@ nav {
     border-right: 1px solid;
     margin-right: 15px;
     padding-right: 15px;
-}
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-.footer-tel-numero-grid img{
-    width: 30px;
-}
-.footer-tel-numero-grid {
-    width: 205px;
-}
-.footer-tel-grid{
-    grid-column: 2 / 5;
-    grid-row: 2 / 4;
-    align-items: flex-start;
-}
-.footer-tel-numero-grid a:hover{
-    background-color: green;
-    color: white;
-    border: none;
-}
-.footer-tel-numero-grid a {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-    border-radius: 15px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    color: black;
-}
-.footer-dir-grid{
-    grid-column: 5 / 7;
-    grid-row: 2 / 4;
-    align-items: flex-start;
-
-}
-.footer-Horarios-grid {
-    grid-column: 7 / 10;
-    grid-row: 2 / 4;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.footer-Horarios-numero-grid {
-    display: flex;
-    margin-top: 15px;
-}
-.hoarios-numero-ls-grid {
-    border-right:  1px solid #000;
-    margin-right: 10px;
-    padding-right: 10px;
-}
-.footer-RedesS-grid {
-    grid-column: 10 / 12;
-    grid-row: 2 / 4;
-    align-items: flex-start;
-}
-.footer-dir-grid h3{
-    margin-bottom: 10px;
-}
-.footer-Instagram-numero-grid a, .footer-facebook-numero-grid a{
-    display: flex;
-    color: black;
-    align-items: center;
-    margin-top: 15px;
-}
-.footer-Instagram-numero-grid img{
-    width: 20px;
-    margin-right: 10px;
-}
-.footer-facebook-numero-grid img {
-    width: 25px;
-    margin-right: 9px;
-}
-.foote-logo-grid {
-    grid-column: 12 / 15;
-    grid-row: 2 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.foote-logo-grid img {
-    width: 90%;
 }
 
 /* estilos del menu modal */
