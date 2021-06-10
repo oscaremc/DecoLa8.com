@@ -1,0 +1,81 @@
+:root {
+    --azul: #A4EBF3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul);
+    padding: 5px 0;
+}
+.nav-menu img, .footer-Instagram-numero img {
+    width: 30px;
+}
+.footer-facebook-numero img {
+    width: 35px;
+}
+.nav-logo img {
+    width: 170px;
+}
+.ws-header {
+    display: none;
+}
+
+/* estilos del menu modal */
+.nav-menu button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container-menu{
+    background-color: var(--azul);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.container-form form {
+    width: 90%;
+    margin: 10px auto;
+}
+.container-producto div {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-producto input {
+    width: 90%;
+    text-align: center;
+}
+.container-form {
+    margin: 15px 0;
+    text-align: center;
+}
+.container-form input {
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.horario input {
+    width: 30vw;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.btn {
+    margin-top: 15px;
+    padding: 5px 15px;
+}

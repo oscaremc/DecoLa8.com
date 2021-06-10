@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Decoraciones La 8</title>
+    <!-- <link rel="stylesheet" href="src/css/indexMovil.css"> -->
+    <link rel="stylesheet" href="/src/css/bdInfo.css" >
+    <link rel="stylesheet" href="/src/css/bdInfoTablet.css" media="(max-width: 800px)">
+    <link rel="stylesheet" href="/src/css/bdInfoMovil.css" media="(max-width: 550px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-menu">
+                <button id="menuModal">
+                    <img src="../utils/logo/menu.png" alt="">
+                </button>
+            </div>
+            <div class="nav-logo">
+                <a href="">
+                    <img src="../utils/logo/logo-globoB-com-movil.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <section class="container-form">
+            <h1>Fomulario de Datos</h1>
+            <form id="task-form">
+                <div class="whatsapp">
+                    <label for="">WhatsApp :</label>
+                    <input type="text" id="numwhatsapp" placeholder="Numero de whatsapp">
+                </div>
+                <div class="linkWhatsapp">
+                    <label for="">Link WhatsApp :</label>
+                    <input type="text" id="linkwhatsapp" placeholder="https:// ....">
+                </div>
+                <div class="direccionUno">
+                    <label for="">Direccion 1 :</label>
+                    <input type="text" id="direccionuno" placeholder="Direccion">
+                </div>
+                <div class="direccionDos">
+                    <label for="">Direccion 2 :</label>
+                    <input type="text" id="direcciondos" placeholder="Direccion">
+                </div>
+                <div class="horario">
+                    <label for="">Horario Apertura semana :</label>
+                    <input type="time" id="timeuno">
+                    <label for="">Horario Cierre semana :</label>
+                    <input type="time" id="timedos">
+                    <label for="">Horario Apertura Domingo :</label>
+                    <input type="time" id="timetres">
+                    <label for="">Horario Cierre Domingo :</label>
+                    <input type="time" id="timecuatro">
+                </div>
+                <div class="instagram">
+                    <label for="">Instagram :</label>
+                    <input type="text" id="instagram" placeholder="Link de Instagram">
+                </div>
+                <div class="facebook">
+                    <label for="">Facebook :</label>
+                    <input type="text" id="facebook" placeholder="Link de Facebook">
+                </div>
+                <button id="btn-task-form" class="btn btn-secondary btn-edit" data-id="${doc.id}">
+                 🖉 Editar
+                </button>
+            </form>
+        </section> -->
+        <form id="task-form">
+            <div id="tasks-container">
+                
+            </div>
+        </form>
+    </main>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSvedHJWiO6A1Er0aB4VQ5GGkdH--DigA",
+    authDomain: "decoracionesla8.firebaseapp.com",
+    projectId: "decoracionesla8",
+    storageBucket: "decoracionesla8.appspot.com",
+    messagingSenderId: "861019311151",
+    appId: "1:861019311151:web:a6638d7e6a8cfe693b4ada"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="../js/bdInfo.js"></script>
+</html>
