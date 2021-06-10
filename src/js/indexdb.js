@@ -44,7 +44,8 @@ window.addEventListener("DOMContentLoaded", async (e) => {
           <h2>${task.valor}</h2>
           <h3>${task.description}</h3>
         </div>
-        <img class="imagen-producto" src="${task.imagen}">
+        // <img class="imagen-producto" src="${task.imagen}">
+        <img class="imagen-producto" src="/src/utils/img/${task.imagen}">
         <div>
           <button class="btn btn-primary btn-delete" data-id="${doc.id}">
             🗑 Borrar
